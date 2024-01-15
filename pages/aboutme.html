@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about ME!!!</title>
+    <meta name="author" content="authen" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <meta content="authen's site" property="og:title" />
+    <meta
+      content="best website ever made by authenyo"
+      property="og:description"
+    />
+    <meta content="../index.html" property="og:url" />
+    <meta content="/images/screenie.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="#a89984" data-react-helmet="true" name="theme-color" />
+    <meta name="”robots”" content="”noai," noimageai” />
+    <script type="text/javascript">
+      // <![CDATA[
+      var speed = 100; // speed of wobbling, lower is faster
+      var height = 3; // height of wobbling in pixels
+      var alink = ""; // page to link text to (set to ="" for no link)
+
+      /****************************
+       *    Wobbly Text Effect     *
+       *(c) 2003-6 mf2fm web-design*
+       *  http://www.mf2fm.com/rv  *
+       * DON'T EDIT BELOW THIS BOX *
+       ****************************/
+      var wobtxt,
+        wobble,
+        wobcnt = 0;
+      window.onload = function () {
+        if (document.getElementById) {
+          var i, wobli;
+          wobble = document.getElementById("wobble");
+          wobtxt = wobble.firstChild.nodeValue;
+          while (wobble.childNodes.length)
+            wobble.removeChild(wobble.childNodes[0]);
+          for (i = 0; i < wobtxt.length; i++) {
+            wobli = document.createElement("span");
+            wobli.setAttribute("id", "wobb" + i);
+            wobli.style.position = "relative";
+            wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+            if (alink) {
+              wobli.style.cursor = "pointer";
+              wobli.onclick = function () {
+                top.location.href = alink;
+              };
+            }
+            wobble.appendChild(wobli);
+          }
+          setInterval("wobbler()", speed);
+        }
+      };
+
+      function wobbler() {
+        for (var i = 0; i < wobtxt.length; i++)
+          document.getElementById("wobb" + i).style.top =
+            Math.round(height * Math.sin(i + wobcnt)) + "px";
+        wobcnt++;
+      }
+      // ]]>
+    </script>
+  </head>
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new fairyDustCursor();
+  </script>
+  <body>
+    <div class="flex">
+      <div class="header">
+        <marquee>
+          <div id="wobble">authen</div>
+        </marquee>
+      </div>
+      <div class="item">
+        <h1>about me</h1>
+        <p>
+          <i
+            >note: i'm horrible at writing about me's. i've wrote 2 about me's
+            and i've been made fun of because of both. be cautious.</i
+          >
+        </p>
+
+        <p>my name's authen and i like music</p>
+        <p>
+          used linux once and fell into a huge privacy foss rabbit hole do not
+          ever download linux was my life's worst mistake
+        </p>
+        <p>he/they bisexual blah blah shut up liberal pronouns in bio</p>
+        <p>
+          i don't play games, watch movies or tv shows and i don't read books.
+          the only thing i do 24/7 is listen to music and browse
+          albumoftheyear.org and rateyourmusic.com (which i'm banned from)
+        </p>
+        <p>
+          a commie, leftist, marxist, woke, feminist and LGBTQIA+xyz²±n+1 and my
+          pronouns are commie/leftist/marxist/feminist
+        </p>
+        <p>
+          if you couldn't tell already, i love cats who fucking doesn't thats
+          the most basic thing ever come on
+        </p>
+        <img src="/images/worldisa.png" />
+      </div>
+      <div class="item2">
+        <div class="borderthing" style="width: 97%">
+          <p>pages</p>
+        </div>
+        <p><a href="/pages/happiness.html">home</a></p>
+        <p><a href="/pages/aboutme.html">about me</a></p>
+        <p><a href="/pages/links.html">links</a></p>
+        <p>
+          <a href="https://authen.123guestbook.com/#" target="_blank"
+            >guestbook</a
+          >
+        </p>
+        <p><a href="/blog/index.html">blog</a></p>
+        <p><a href="/pages/gallery.html">gallery</a></p>
+        <p><a href="/pages/coolmusic.html">cool music</a></p>
+        <p>
+          <a href="https://github.com/authenyoo/authens-site-v2" target="_blank"
+            >github repo</a
+          >
+        </p>
+        <p><a href="/pages/music.html">my music</a></p>
+      </div>
+    </div>
+  </body>
+</html>

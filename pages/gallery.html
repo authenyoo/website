@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- i dont know what this meta name viewport thing does it came with the neocities start page i think
+    so its gonna be like that-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gallery</title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- script tag for the mouse effects -->
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <!--- embed meta tags for sites like twitter and discord -->
+    <meta content="authen's site" property="og:title" />
+    <meta
+      content="for all your authen and authenyo needs"
+      property="og:description"
+    />
+    <meta content="/index.html" property="og:url" />
+    <meta content="/images/screenie.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="#33FFFF" data-react-helmet="true" name="theme-color" />
+    <meta name="”robots”" content="”noai," noimageai” />
+    <script type="text/javascript">
+      // <![CDATA[
+      var speed = 100; // speed of wobbling, lower is faster
+      var height = 3; // height of wobbling in pixels
+      var alink = ""; // page to link text to (set to ="" for no link)
+
+      /****************************
+       *    Wobbly Text Effect     *
+       *(c) 2003-6 mf2fm web-design*
+       *  http://www.mf2fm.com/rv  *
+       * DON'T EDIT BELOW THIS BOX *
+       ****************************/
+      var wobtxt,
+        wobble,
+        wobcnt = 0;
+      window.onload = function () {
+        if (document.getElementById) {
+          var i, wobli;
+          wobble = document.getElementById("wobble");
+          wobtxt = wobble.firstChild.nodeValue;
+          while (wobble.childNodes.length)
+            wobble.removeChild(wobble.childNodes[0]);
+          for (i = 0; i < wobtxt.length; i++) {
+            wobli = document.createElement("span");
+            wobli.setAttribute("id", "wobb" + i);
+            wobli.style.position = "relative";
+            wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+            if (alink) {
+              wobli.style.cursor = "pointer";
+              wobli.onclick = function () {
+                top.location.href = alink;
+              };
+            }
+            wobble.appendChild(wobli);
+          }
+          setInterval("wobbler()", speed);
+        }
+      };
+
+      function wobbler() {
+        for (var i = 0; i < wobtxt.length; i++)
+          document.getElementById("wobb" + i).style.top =
+            Math.round(height * Math.sin(i + wobcnt)) + "px";
+        wobcnt++;
+      }
+      // ]]>
+    </script>
+  </head>
+  <body>
+    <!-- script tag for the mouse effects 2 -->
+    <script type="module">
+      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      new fairyDustCursor();
+    </script>
+    <!--- basic flexbox stuff -->
+    <div class="flex" style="flex-wrap: wrap">
+      <div class="header">
+        <marquee>
+          <div id="wobble">authen</div>
+        </marquee>
+      </div>
+      <div class="item" style="order: 1; height: 310.55900621118013vh">
+        <h1>gallery</h1>
+        <p>
+          <img
+            src="/images/gallery/0ef74d99-ddfb-40d3-b2ce-9be24b66bc70.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/1e7bb89d-9b88-46e3-a399-38c07f09bd36.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230724_162251.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230827_181147.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230827_181336.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230827_181346.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230827_181356.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/27be1643-4106-4bb4-9ec3-ee0722175f82.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/20230827_181346.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/5baa900a-a2d1-4bf2-9ded-a4f95cc18acd.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/a5da6bba-743b-40a9-bb8f-d6ea69d080d4.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/catoncomputer.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/cbdd348e-84eb-4d45-83e8-448d4da69934.png"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/IMG_20230922_105957.jpg"
+            width="200"
+            height="200"
+          />
+          <img
+            src="/images/gallery/IMG_20230922_111021.jpg"
+            width="200"
+            height="200"
+          />
+        </p>
+        <marquee><img src="/images/gallery/3dgifmaker11702.gif" /></marquee>
+      </div>
+      <!--- lil part with all the pages -->
+      <div class="item2" style="order: 2; height: 310.55900621118013vh">
+        <div class="borderthing" style="width: 97%">
+          <p>pages</p>
+        </div>
+        <p><a href="/pages/happiness.html">home</a></p>
+        <p><a href="/pages/aboutme.html">about me</a></p>
+        <p><a href="/pages/links.html">links</a></p>
+        <p>
+          <a href="https://authen.123guestbook.com/#" target="_blank"
+            >guestbook</a
+          >
+        </p>
+        <p><a href="/blog/index.html">blog</a></p>
+        <p><a href="/pages/gallery.html">gallery</a></p>
+        <p><a href="/pages/coolmusic.html">cool music</a></p>
+        <p>
+          <a href="https://github.com/authenyoo/authens-site-v2" target="_blank"
+            >github repo</a
+          >
+        </p>
+        <p><a href="/pages/music.html">my music</a></p>
+      </div>
+    </div>
+  </body>
+</html>

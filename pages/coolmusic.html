@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cool music</title>
+    <meta name="author" content="authen" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <meta content="cool music" property="og:title" />
+    <meta
+      content="music that i find cool - authen's site"
+      property="og:description"
+    />
+    <meta content="/pages/coolmusic" property="og:url" />
+    <meta content="/images/coolmusic.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="#a89984" data-react-helmet="true" name="theme-color" />
+    <meta name="”robots”" content="”noai," noimageai” />
+    <script type="text/javascript">
+      // <![CDATA[
+      var speed = 100; // speed of wobbling, lower is faster
+      var height = 3; // height of wobbling in pixels
+      var alink = ""; // page to link text to (set to ="" for no link)
+
+      /****************************
+       *    Wobbly Text Effect     *
+       *(c) 2003-6 mf2fm web-design*
+       *  http://www.mf2fm.com/rv  *
+       * DON'T EDIT BELOW THIS BOX *
+       ****************************/
+      var wobtxt,
+        wobble,
+        wobcnt = 0;
+      window.onload = function () {
+        if (document.getElementById) {
+          var i, wobli;
+          wobble = document.getElementById("wobble");
+          wobtxt = wobble.firstChild.nodeValue;
+          while (wobble.childNodes.length)
+            wobble.removeChild(wobble.childNodes[0]);
+          for (i = 0; i < wobtxt.length; i++) {
+            wobli = document.createElement("span");
+            wobli.setAttribute("id", "wobb" + i);
+            wobli.style.position = "relative";
+            wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+            if (alink) {
+              wobli.style.cursor = "pointer";
+              wobli.onclick = function () {
+                top.location.href = alink;
+              };
+            }
+            wobble.appendChild(wobli);
+          }
+          setInterval("wobbler()", speed);
+        }
+      };
+
+      function wobbler() {
+        for (var i = 0; i < wobtxt.length; i++)
+          document.getElementById("wobb" + i).style.top =
+            Math.round(height * Math.sin(i + wobcnt)) + "px";
+        wobcnt++;
+      }
+      // ]]>
+    </script>
+  </head>
+  <body>
+    <script type="module">
+      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      new fairyDustCursor();
+    </script>
+    <div class="flex">
+      <div class="header">
+        <marquee>
+          <div id="wobble">authen</div>
+        </marquee>
+      </div>
+      <div class="item" style="height: 1900px">
+        <p>cool music that i like and you should listen to it</p>
+        <p>
+          <a
+            href="https://open.spotify.com/album/3GvkNpMnXI9Kghl3mO0bqB"
+            target="_blank"
+          >
+            <img
+              src="/images/peeve.jpg"
+              alt="TRURELIGION by peeve, the future of music"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/5risYG7klZCSLMNxB9dZhf"
+            target="_blank"
+          >
+            <img
+              src="/images/milton.jpg"
+              alt="Clube da Esquina by Milton Nascimento"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/7efViNi9BwV3o9TcK4IcVR"
+            target="_blank"
+          >
+            <img
+              src="/images/ilysm.jpg"
+              alt="no matter how i look at it .. by ilysm"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/24i2X6WHCessCxxZGP8eJW"
+            target="_blank"
+          >
+            <img
+              src="/images/debut.jpeg"
+              alt="debut by heavensouls"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/7axF99v0pP2oBj5RxAWgrv"
+            target="_blank"
+          >
+            <img
+              src="/images/fenton.jpg"
+              alt="Somebody Loan Me A Dime by Fenton Robinson"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://soundcloud.com/twerknation28/sets/season-8"
+            target="_blank"
+          >
+            <img
+              src="/images/twerknation28.jpg"
+              alt="season 8 by TwerkNation28"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/6pLL6zz2kgDSKHA8mNiPDn"
+            target="_blank"
+          >
+            <img
+              src="/images/melancholia.jpg"
+              alt="melancholia blue by melancholia blue"
+              width="20%"
+              height="20%"
+            />
+          </a>
+          <a
+            href="https://open.spotify.com/album/4X3TbSXKD3OMtFuDMjmWkJ"
+            target="_blank"
+          >
+            <img
+              src="/images/ozzglorious.jpg"
+              alt="bitch im ozzglorious by drake cone"
+              width="20%"
+              height="20%"
+            />
+          </a>
+        </p>
+      </div>
+
+      <div class="item2" style="height: 1900px">
+        <div class="borderthing" style="width: 97%">
+          <p>pages</p>
+        </div>
+        <p><a href="/pages/happiness.html">home</a></p>
+        <p><a href="/pages/aboutme.html">about me</a></p>
+        <p><a href="/pages/links.html">links</a></p>
+        <p>
+          <a href="https://authen.123guestbook.com/#" target="_blank"
+            >guestbook</a
+          >
+        </p>
+        <p><a href="/blog/index.html">blog</a></p>
+        <p><a href="/pages/gallery.html">gallery</a></p>
+        <p><a href="/pages/coolmusic.html">cool music</a></p>
+        <p>
+          <a href="https://github.com/authenyoo/authens-site-v2" target="_blank"
+            >github repo</a
+          >
+        </p>
+        <p><a href="/pages/music.html">my music</a></p>
+      </div>
+    </div>
+  </body>
+</html>

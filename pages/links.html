@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my links</title>
+    <meta name="author" content="authen" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <meta content="authen's site" property="og:title" />
+    <meta
+      content="best website ever made by authenyo"
+      property="og:description"
+    />
+    <meta content="../index.html" property="og:url" />
+    <meta content="/images/screenie.png" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="#a89984" data-react-helmet="true" name="theme-color" />
+    <meta name="”robots”" content="”noai," noimageai” />
+
+    <script type="text/javascript">
+      // <![CDATA[
+      var speed = 100; // speed of wobbling, lower is faster
+      var height = 3; // height of wobbling in pixels
+      var alink = ""; // page to link text to (set to ="" for no link)
+
+      /****************************
+       *    Wobbly Text Effect     *
+       *(c) 2003-6 mf2fm web-design*
+       *  http://www.mf2fm.com/rv  *
+       * DON'T EDIT BELOW THIS BOX *
+       ****************************/
+      var wobtxt,
+        wobble,
+        wobcnt = 0;
+      window.onload = function () {
+        if (document.getElementById) {
+          var i, wobli;
+          wobble = document.getElementById("wobble");
+          wobtxt = wobble.firstChild.nodeValue;
+          while (wobble.childNodes.length)
+            wobble.removeChild(wobble.childNodes[0]);
+          for (i = 0; i < wobtxt.length; i++) {
+            wobli = document.createElement("span");
+            wobli.setAttribute("id", "wobb" + i);
+            wobli.style.position = "relative";
+            wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+            if (alink) {
+              wobli.style.cursor = "pointer";
+              wobli.onclick = function () {
+                top.location.href = alink;
+              };
+            }
+            wobble.appendChild(wobli);
+          }
+          setInterval("wobbler()", speed);
+        }
+      };
+
+      function wobbler() {
+        for (var i = 0; i < wobtxt.length; i++)
+          document.getElementById("wobb" + i).style.top =
+            Math.round(height * Math.sin(i + wobcnt)) + "px";
+        wobcnt++;
+      }
+      // ]]>
+    </script>
+  </head>
+  <body>
+    <script type="module">
+      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      new fairyDustCursor();
+    </script>
+    <div class="flex">
+      <div class="header">
+        <marquee>
+          <div id="wobble">authen</div>
+        </marquee>
+      </div>
+      <div class="item" style="height: 900px">
+        <h1>my links!!!!</h1>
+        <p>
+          <a href="https://wetdry.world/@authenyo">
+            <img
+              src="/images/mastodon.gif"
+              alt="360 Spin of the Mastodon logo. It functions as a hyperlink to my Mastodon profile."
+              width="88"
+              height="31"
+          /></a>
+
+          <a href="https://www.last.fm/user/pixeIbath">
+            <img
+              src="/images/lastfm.gif"
+              alt="360 Spin of the Lastfm logo. It functions as a hyperlink to my Lastfm profile."
+              width="88"
+              height="31"
+          /></a>
+
+          <a href="https://www.albumoftheyear.org/user/authenyo/">
+            <img
+              src="/images/aoty.gif"
+              alt="360 Spin of the Albumoftheyear logo. It functions as a hyperlink to my Albumoftheyear profile."
+              width="88"
+              height="31"
+          /></a>
+
+          <a href="https://open.spotify.com/user/qfyf9girl07waduer1kkystsg">
+            <img
+              src="/images/spotifyy.gif"
+              alt="360 Spin of the Spotify logo. It functions as a hyperlink to my Spotify profile."
+              width="88"
+              height="31"
+          /></a>
+
+          <a href="https://twitter.com/maybeauthen">
+            <img
+              src="/images/twitterr.gif"
+              width="88"
+              height="31"
+              alt="360 Spin of the Twitter logo. It functions as a hyperlink to my Twitter profile."
+          /></a>
+          <a href="https://ipgrabber.bandcamp.com/">
+            <img
+              src="/images/bandcamp.gif"
+              alt="360 Spin of the Bandcamp logo. It functions as a hyperlink to my Bandcamp profile."
+              width="88"
+              height="31"
+          /></a>
+          <a href="mailto:authen@authenyo.xyz">
+            <img
+              src="/images/email.gif"
+              alt="360 Spin of a Envelope. It functions as a hyperlink to e-mail me."
+              width="88"
+              height="31"
+            />
+          </a>
+        </p>
+      </div>
+
+      <div class="item2" style="height: 900px">
+        <div class="borderthing" style="width: 97%">
+          <p>pages</p>
+        </div>
+        <p><a href="/pages/happiness.html">home</a></p>
+        <p><a href="/pages/aboutme.html">about me</a></p>
+        <p><a href="/pages/links.html">links</a></p>
+        <p><a href="https://authen.123guestbook.com/#">guestbook</a></p>
+        <p><a href="/blog/index.html">blog</a></p>
+        <p><a href="/pages/gallery.html">gallery</a></p>
+        <p><a href="/pages/coolmusic.html">cool music</a></p>
+        <p>
+          <a href="https://github.com/authenyoo/authens-site-v2" target="_blank"
+            >github repo</a
+          >
+        </p>
+        <p><a href="/pages/music.html">my music</a></p>
+      </div>
+    </div>
+  </body>
+</html>
