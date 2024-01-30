@@ -41,6 +41,7 @@ authen's website. very cool!
     <title>authenyo's website: for all your authen and authenyo needs</title>
     <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
     <!-- script tag for the mouse effects -->
     <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <!--- embed meta tags for sites like twitter and discord -->
@@ -66,8 +67,17 @@ authen's website. very cool!
 
       new fairyDustCursor();
     </script>
-    <div class="item" style="margin: auto; height: 500px">
-      <p>hey, welcome to my site!</p>
+<div class="window active" style="max-width: 600px; margin: auto">
+  <div class="title-bar">
+    <div class="title-bar-text">hey, welcome to my site!</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+      <img src="/images/gallery/20230724_162217.jpg" width="200" height="200" align="left" style="margin: 5px">
       <p>some things:</p>
       <p>
         mobile isnt supported at all and not recommended, best viewed on a
@@ -81,16 +91,8 @@ authen's website. very cool!
         this website has a lot of deprecated tags (for the 2000s ish aesthetic)
       </p>
       <p>also if possible enable javascript</p>
-      <a href="/pages/happiness.html"
-        ><img
-          src="/images/enter.gif"
-          style="margin: 4px"
-          width="200"
-          height="200"
-      /></a>
-      <a rel="me" href="https://wetdry.world/@authenyo" style="opacity: 0"
-        >Mastodon</a
-      >
-    </div>
+      <button><a href="/pages/happiness.html" style="color: #000000">enter</a></button>
+  </div>
+</div>
   </body>
 </html>
