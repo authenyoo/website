@@ -115,3 +115,14 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+#statuscafe {
+    padding: .5em;
+    background-color: var(--red);
+    border: 2px solid var(--blue);
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 0.5em 0.5em 0.5em;
+}
