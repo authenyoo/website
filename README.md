@@ -1,5 +1,5 @@
-# AUTHEN's COOL AND HIP WEBSITE
+![](/images/3dgifmaker77519.gif)
 
-## HOSTED AT [**NEOCITIES**](https://authenyo.xyz).
+# authenyo.xyz
 
-made with bare bones html and css and javascript. sorry i didnt use the newest javascript framework with meta framework with the the the no code scalable solution
+git repo for my personal website. This website is written in barebones HTML and CSS, so it's very messy. I've tried using a static site generator but I'm too stupid. It works™
