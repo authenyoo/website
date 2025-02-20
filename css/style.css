@@ -1,128 +1,194 @@
-/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
-   HTML content. To learn how to do something, just try searching Google for questions like
-   "how to change link color." */
 :root {
   --red: #330000;
   --blue: #33ffff;
 }
+
+* {
+  cursor: url("/images/hellokitty-bow.png"), auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--red);
   color: var(--blue);
-  background-position: top;
-  font-family: "jmh";
-  font-size: 18px;
+  background-image: url("/images/nett.png"), url("/images/nett.png"), url("/images/nett.png"), url("/images/nett2.png"), url("/images/bg.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+  background-position: 0% 100%,0% 0%,100% 0%,100% 100%,top left;
+  background-size: 15%;
+  font-family: "virale";
+  font-size: 20px;
   font-weight: normal;
   font-style: normal;
   text-align: center;
-}
-h1 {
-  margin-left: 2%;
-  text-align: left;
-}
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  height: 700px;
-  width: 100%;
-  gap: 10px;
-}
-
-.item {
-  border-style: solid;
-  height: 700px;
-  width: 50%;
-  background-color: var(--red);
-}
-.item2 {
-  border-style: solid;
-  height: 700px;
-  width: 15%;
-  background-color: var(--red);
-}
-.item3 {
-  border-style: solid;
-  height: 500px;
-  width: 10%;
-  background-color: var(--red);
-}
-
-.borderthing {
-  border-style: solid;
-  height: 49px;
-  width: 99%;
-  background-color: var(--red);
-  color: var(--blue);
-  text-align: center;
-  margin: auto;
-  border-width: 2;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 @font-face {
-  font-family: "jmh";
-  src: url("/fonts/jmh.otf") format("opentype");
+  font-family: "virale";
+  src: url("/fonts/basiic.ttf");
+}
+
+h1 {
+  margin-left: 2%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 700px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.item, .item2, .item3 {
+  border: solid var(--blue);
+  background-color: var(--red);
+  padding: 1rem;
+  height: auto;
+  min-height: 200px;
+}
+
+.item {
+  width: 100%;
+  max-width: 800px;
+}
+
+.item2 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.item3 {
+  width: 100%;
+  max-width: 200px;
 }
 
 .header {
-  border-style: solid;
-  height: 12%;
-  width: 65.5%;
+  border: solid var(--blue);
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
   color: var(--blue);
-  margin-top: 10px;
+  margin: 1rem auto;
   background-color: var(--red);
-  border-width: 1;
-  font-size: 50px;
+  font-size: clamp(24px, 5vw, 50px);
 }
-.banner {
-  border-style: solid;
-  height: 5%;
-  width: 65.5%;
+
+.borderthing {
+  border: solid var(--blue);
+  padding: 0.5rem;
+  width: 100%;
+  background-color: var(--red);
   color: var(--blue);
   text-align: center;
-  margin: auto;
-  background-color: var(--red);
-  border-width: 1;
+  margin-bottom: 1rem;
 }
 
 a {
   color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .whatsnew {
-  background-color: #330000;
-  width: 99%;
-  height: 50px;
-  overflow-x: hidden;
+  background-color: var(--red);
+  width: 100%;
+  max-height: 200px;
   overflow-y: auto;
   text-align: center;
-  padding: 20px;
-  border-style: solid;
-  margin: auto;
-  border-width: medium;
+  padding: 1rem;
+  border: solid var(--blue);
+  margin: 1rem auto;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
-.project {
-  height: 200px;
-  width: 200px;
-}
+
 .projectflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.project {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+#statuscafe {
+  padding: 1rem;
+  background-color: var(--red);
+  border: 2px solid var(--blue);
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+#statuscafe-username {
+  margin-bottom: 0.5rem;
+}
+
+#statuscafe-content {
+  margin: 0.5rem;
+}
+
+.flex2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 1rem;
+  margin: auto;
+  justify-content: center;
 }
-#statuscafe {
-    padding: .5em;
-    background-color: var(--red);
-    border: 2px solid var(--blue);
+
+.itemv3 {
+  margin: auto;
 }
-#statuscafe-username {
-    margin-bottom: .5em;
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    background-size: 25%;
+    padding: 0.5rem;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .item, .item2, .item3 {
+    width: 95%;
+    margin: 0.5rem auto;
+  }
 }
-#statuscafe-content {
-    margin: 0 0.5em 0.5em 0.5em;
+
+@media screen and (max-width: 480px) {
+  body {
+    background-size: 35%;
+  }
+  
+  .projectflex {
+    grid-template-columns: 1fr;
+  }
 }

@@ -7,41 +7,50 @@
     <description>silly little guy writes sometimes</description>
     <language>en-us</language>
     <managingEditor>authen</managingEditor>
-    <item>
-      <title>i made the worst album ever</title>
-      <pubDate>Thu, 16 Nov 2023 22:53:03 -0300</pubDate>
-      <link>https://authenyo.xyz/blog/posts/16-11-2023-i-made-the-worst-album-ever</link>
+<item>
+      <title>my experience with self-hosting and netcup</title>
+      <pubDate>Thu, 15 Feb 2025 17:19:03 -0300</pubDate>
+      <link>https://authenyo.xyz/blog/posts/15-02-2025-my-experience-with-self-hosting-and-netcup</link>
       <author>authen</author>
-      <description><![CDATA[hahha.... long time no see...
-<p>if you haven't noticed, recently i dropped a <a href="https://ipgrabber.bandcamp.com/album/authensmoulder">producer rapper collab album with dope shit</a> (his artist name is cracksmoulder, but i'll call him dope shit from now on)</p>
-<p>do i think it is good? kind of</p>
-<p>but... mashing together the genres experimental hip hop, noise, sound collage, ambient, atmospheric drum and bass, breakcore, chopped and screwed, industrial hip hop, pluggnb, midi music into this chaotic, raw and quirky 10 minute album was extremely fun and had some moments that turned out... actually listenable and good?</p>
-<p>me and dope shit watching skibidi toilet gender swap and garten of banban annoying orange gaming was the funniest shit ever and turned into probably my best album</p>
-<p>"lord forgive me, cause i fw u heavy ❤️" is one of the most chaotic ones on the album and turned out to be (in my opinion) my best song</p>
-<p>"this nigga authen needs to stop using leroy snares" is probably the funniest in the whole album. this stupid fucking leroy snare bit and the "weee are the leroyyy snares" part is actually so funny to me</p>
-<p>i experimented a lot with chopping and screwing in this album, which probably was the worst part</p>
-<p>my chopping and screwing kinda sucked tbh, especially in "shout out 2 tha drainers"</p>
-<p>also randomly</p>
-<p>list of samples and people that can sue me and dope shit:</p>
-<UL style="TEXT-ALIGN: left">
-<li>ericdoa - 2008</li>
-<li>drowing pool - bodies</li>
-<li>radiohead - 15 step midi</li>
-<li>ghostbusters theme midi</li>
-<li>technically amen break but no one cares no one has ever cleared an amen break</li>
-<li>that one video of quinn where shes like im bladee drain gang</li>
-<li>ihascupquake - mineblox (the one with you were always playing roblox)</li>
-<li>SODA BY GLEN (PROD TREKYO &amp; 7VENLYVES) *SLEEPINGTETSUO MIX*</li></ul>
-<p>yeah thats basically all i wanted to say</p>
-<p>check out the <a href="https://authensmoulder.neocities.org/">authensmoulder website</a> it got links to stuff its cool its comic sans</p>
-<p>as of me writing this, authensmoulder is not on streaming, but it soon will. stay tuned!!!</p>]]></description>
-    </item>
+      <description><![CDATA[<p>It&#39;s January 7th, 2025. Around 6:52 PM. I set up my 12th <a href="https://en.wikipedia.org/wiki/Fediverse">Fediverse</a> instance, akkoma.authenyo.xyz. Most of these instances were run on my own computer, using <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux">WSL</a>. As I don&#39;t want to set my house on fire or have a 1 gajillion dollar light bill, these instances had very low uptime and generally only up when I was using them. This instance was no different.</p>
+        <p>I make my usual test post for my alts. <a href="https://brain.worm.pink/notice/ApqsRI2iZMQkTApO2y">&quot;Hi yall&quot;</a>. 6:58 PM. I can&#39;t set myself as admin. Fuck. 7:08 PM. Nevermind. It works. I set up all the emojis and about pages and I start thinking about moving to a VPS. I remember <a href="https://social.karebu.gay/@karebu">jade</a> telling me about this hosting company, called Netcup. They have these really good ARM servers for extremely cheap, 8 gigabytes of ram, 6 vCores and 256gb of storage for 5 euros. I get some random vouchers from Google and my first month is one whole euro. January 8th, 3:31PM. I pay for the VPS with my big bucks (1 euro).</p>
+        <p>Jade tells me that when my VPS is ready, they will send me an email with the SCP (Server Control Panel) and SSH login credentials. 3:54 PM, no email. I post <a href="https://pl.noob.quest/notice/ApsgqVG1T1Dh0FJTnM">&quot;i&#39;m giving netcup 10 minutes if they dont send me this email i&#39;m upping the switch&quot;</a>. 4:32 PM. Netcup sends me a email. It&#39;s my VPS login. I change the password and the VPS is german. Killing myself. To this day I still see german bits</p>
+        <p>I try migrating the Akkoma installation from my WSL installation to my VPS. Jade tells me to copy the whole folder. Very very big mistake. I waited 400 hours for all that to transfer just for it to NOT work. It&#39;s actually just the config database and uploads. Never trust jade. I did it how the Akkoma docs told me to and after a couple hours it works.</p>
+        <p>It&#39;s January 25th, around 3:57 PM. I tried to <a href="https://docs.akkoma.dev/stable/installation/migrating_to_akkoma/#migrating-back-to-pleroma">migrate from Akkoma to Pleroma</a> with NO backups and I IMMEDIATELY fucked up the db migrations They should&#39;ve never let me touch a computer. Anyways instead of fixing it I do what I do best and that is nuke the entire instance and make another one, of course.</p>
+        <p>Same day, around 8:15 PM. I set up pleroma.authenyo.xyz. I import my followers and after an hour federation just doesn&#39;t work. And as the greatest sysadmin of all time, I, of course, nuke the entire instance and make another one. January 26th, 12 AM. I set up misskey.authenyo.xyz. Despite the name it was <a href="https://activitypub.software/TransFem-org/Sharkey">Sharkey</a>. I do my usual <a href="https://brain.worm.pink/notice/AqSdMRX2uGjLhw9TaS">&quot;HELLO SHARKEY 😍&quot;</a> test post. Importing follows doesn&#39;t work. Give up and nuke instance.</p>
+        <p>January 30th, 7 PM. After days of dodging setting it up by playing on my minecraft server (we&#39;ll talk about that later), I set up akkoma2.authenyo.xyz, aka irisoma 2. It worked fine for a while (for authenyo standards), with me setting up automatic backups on February 3rd with Backblaze B2, making me think it was safe right? And it would last really long right? WRONG! Around February 7th, federation starts simply not working with my other account, @authen@brain.worm.pink, and looking at the logs this happens to a LOT of other people too, and logs just tell me :econnrefused and the link to the posts. I make a <a href="https://meta.akkoma.dev/t/instance-econnrefuseding-random-stuff/823">post in the Akkoma forum</a> about this because I have 0 idea what the fuck is going on. The main developer of Akkoma tells me it&#39;s a networking issue. I try using one of those backups and it does the same thing. I want you to guess what I did next. I deleted it and remade it.</p>
+        <p>February 8th, 6 PM. I set up shrimp.authenyo.xyz, running <a href="https://iceshrimp.dev/iceshrimp/iceshrimp.net">Iceshrimp.NET</a>. I found out I left a example.org somewhere in the config and now it doesn&#39;t federate to Mastodon. Also makes some <a href="https://media.worm.pink/media/a2dc21d239eb34689514d7b80a89caca9a783dd7a601a12f174b1350c9df46e4.png">funny side effects</a> in some instances running older versions of Pleroma. I want you to just guess what I did next. Do I even have to tell you at this point you&#39;ve read this post you know what&#39;s gonna happen.</p>
+        <p>February 10th, Ruben from <a href="https://synth.download">synth.download</a> offers to set up another Iceshrimp.NET instance for me. I say &quot;bet&quot; and give him my SSH credentials. He sets up iceshrimp.authenyo.xyz for me. It&#39;s been about 5 days, I haven&#39;t used it much but it seems to be working fine. If I ever blow it up I will let you know.</p>
+        <h2 id="iriscraft">Iriscraft</h2>
+        <p>January 26th, 1 AM. I set up Iriscraft, 1.7.2 version. I told people it was for nostalgia but also because my PC doesn&#39;t run the latest version of Minecraft on Windows (it works on arch for some reason). I update to 1.8 because 1.7.2 sucks. <a href="https://nyanide.com">Kirby</a> tells me there&#39;s a vulnerability in stock 1.8 that allows people to run server-level console commands on signs. I updated to 1.8.8. February 8th I updated to 1.21.4 because I switched to Arch and 1.8.8 survival sucks. It&#39;s still up to this day, if you ever wanna hop on mc.authenyo.xyz 1.21.4. Cracked accounts allowed too cause I&#39;m poor. Here&#39;s a couple screenshots for your enjoyment.</p>
+        <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145207.png"></p>
+          <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145228.png"></p>
+            <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145313.png"></p>
+              <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145339.png"></p>
+                <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145349.png"></p>
+                  <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145419.png"></p>
+                    <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145501.png"></p>
+                      <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145510.png"></p>
+                        <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145524.png"></p>
+                          <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145534.png"></p>
+                            <p><img src="https://authenyo.xyz/images/Screenshot_20250215_145609.png"></p>
+                              <p><img src="https://authenyo.xyz/images/Screenshot_20250215_150614.png"></p>
+
+                                <h2 id="owncast">Owncast</h2>
+                                <p>February 4th, I set up Owncast at stream.authenyo.xyz. I stream Squid Game and Peggle on it once. I never really used it again. Was really easy to set up though I just ran a bash script and it worked fine.</p>
+                                <h2 id="4get">4get</h2>
+                                <p>I set up 4get, a proxy search engine, on January 31st around 9 PM. It&#39;s probably the most useful thing I host and search results are way better than Google. People that complain about AI are often annoying but how Google does it is genuinely awful. Like actually. I want a picture of a bunny with glasses and it shows me ONLY AI slop. 4get is the only good piece of PHP software it just works. I just followed <a href="https://git.lolcat.ca/lolcat/4get/src/branch/master/docs/caddy.md">this guide</a> and it worked perfectly and I never had to touch it again. Beautiful. I owe you my kidneys lolcat.</p>
+                                <h2 id="conclusion-or-something-how-do-you-write-again">Conclusion or Something how do you write again</h2>
+                                <p>Should you self-host? Maybe. If you have lots of time in your hand and a couple dollars. Should you buy a Netcup VPS? Maybe. It&#39;s only been a month but I&#39;ve had a great experience with Netcup. I haven&#39;t needed support yet and some Reddit (ew) people say it&#39;s nonexistent. The only thing I&#39;m really concerned about is the &quot;no left-wing extremism&quot; in their <a href="https://www.netcup.com/en/terms-and-conditions">TOS</a>, but I think I can just not be snitched on and be fine. Am I a horrible sysadmin? Yes, but never forget the number one rule of self-hosting. be yoursfelf, love everyone, change the world, have fun. And I did all 3 ❤️ wait its 4 fuck</p>
+                                <p>Anyways, sorry for not posting for 2 years, I was too busy getting bangers on 𝕏 - The Everything App like famous tweet <a href="https://x.com/authenyo/status/1834789129097199894">&quot;Jane remover with one of the twin towers&quot;</a>, that was a really good one</p>
+                                ]]></description>
+              </item>
     <item>
       <title>authen is fucking DEAD!!!!!</title>
       <pubDate>Thu, 14 Sep 2023 18:55:03 -0300</pubDate>
       <link>https://authen.neocities.org/blog/posts/14-09-2023-authen-is-fucking-dead</link>
       <author>authen</author>
-      <description><![CDATA[guess who's computer and phone broke in the same week 
+      <description><![CDATA[guess who's computer and phone broke in the same week
 <MARQUEE>ME!!!!!</MARQUEE>
 <p>if you haven't noticed yet, for about 5 days (04/09/2023 to 08/09/2023), i have been completely inactive from the internet</p>
 <p>i think i took too long to make this post but anyway</p>
@@ -50,10 +59,10 @@
 <p>isnt that FUN!!!!!!</p>
 <p>im on my moms chromebook rn which has access to:</p>
 <UL style="TEXT-ALIGN: left">
-<li>my discord 
-<li>spotify 
-<li>rateyourmusic (not ~mrdjkhaled [which i think is not linked here yet but thats my main account], its ~leftwingkanyewest) 
-<li>last.fm 
+<li>my discord
+<li>spotify
+<li>rateyourmusic (not ~mrdjkhaled [which i think is not linked here yet but thats my main account], its ~leftwingkanyewest)
+<li>last.fm
 <li>and most importantly, neocities</li></ul>
 <p>now lets talk about the cool gimmicks...</p>
 <MARQUEE>SONG OF THE DAY!!!!!!!!</MARQUEE>

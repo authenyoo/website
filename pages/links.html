@@ -7,7 +7,6 @@
     <meta name="author" content="authen" />
     <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
     <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
     <meta content="authen's site" property="og:title" />
     <meta
       content="best website ever made by authenyo"
@@ -18,60 +17,9 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta content="#a89984" data-react-helmet="true" name="theme-color" />
     <meta name="”robots”" content="”noai," noimageai” />
-    <script type="text/javascript">
-      // <![CDATA[
-      var speed = 100; // speed of wobbling, lower is faster
-      var height = 3; // height of wobbling in pixels
-      var alink = ""; // page to link text to (set to ="" for no link)
-
-      /****************************
-       *    Wobbly Text Effect     *
-       *(c) 2003-6 mf2fm web-design*
-       *  http://www.mf2fm.com/rv  *
-       * DON'T EDIT BELOW THIS BOX *
-       ****************************/
-      var wobtxt,
-        wobble,
-        wobcnt = 0;
-      window.onload = function () {
-        if (document.getElementById) {
-          var i, wobli;
-          wobble = document.getElementById("wobble");
-          wobtxt = wobble.firstChild.nodeValue;
-          while (wobble.childNodes.length)
-            wobble.removeChild(wobble.childNodes[0]);
-          for (i = 0; i < wobtxt.length; i++) {
-            wobli = document.createElement("span");
-            wobli.setAttribute("id", "wobb" + i);
-            wobli.style.position = "relative";
-            wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
-            if (alink) {
-              wobli.style.cursor = "pointer";
-              wobli.onclick = function () {
-                top.location.href = alink;
-              };
-            }
-            wobble.appendChild(wobli);
-          }
-          setInterval("wobbler()", speed);
-        }
-      };
-
-      function wobbler() {
-        for (var i = 0; i < wobtxt.length; i++)
-          document.getElementById("wobb" + i).style.top =
-            Math.round(height * Math.sin(i + wobcnt)) + "px";
-        wobcnt++;
-      }
-      // ]]>
-    </script>
+   <script defer src="https://collecting.slurs.online/script.js" data-website-id="10adc62c-d228-48f0-98ec-c668a326d6ee"></script>
   </head>
   <body>
-    <script type="module">
-      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
-
-      new fairyDustCursor();
-    </script>
     <div class="flex">
       <div class="header">
         <marquee>
@@ -80,52 +28,22 @@
       </div>
       <div class="item" style="height: 900px">
         <h1>where you can find me</h1>
-
-        <div class="item2" style="width: 500px; height: 400px; margin: auto">
           <p>
-            mastodon:
-            <a href="https://wetdry.world/@authenyo">authenyo@wetdry.world</a>
+          fediverse: <a href="https://brain.worm.pink/authen">@authen@brain.worm.pink</a>
           </p>
           <p>
-            sharkey:
-            <a href="https://eepy.zone/@authenyo">authenyo@eepy.zone</a>
+          bluesky: <a href="https://bsky.app/profile/bluesky.authenyo.xyz">@bluesky.authenyo.xyz</a>
           </p>
           <p>
-            akkoma:
-            <a href="https://soc.noob.quest/authenyo"
-              >authenyo@soc.noob.quest</a
-            >
+          𝕏 - The Everything App: <a href="https://x.com/authenyo">@authenyo</a>
           </p>
           <p>
-            lastfm: <a href="https://www.last.fm/user/pixeIbath">pixeIbath</a>
+          discord: <a href="https://discord.com/users/1089177218976075817">pullupatyoblockimlikemrbeast</a>
           </p>
           <p>
-            aoty:
-            <a href="https://www.albumoftheyear.org/user/authenyo/">authenyo</a>
+          e-mail: <a href="mailto:iris@authenyo.xyz">iris@authenyo.xyz</a>
           </p>
-          <p>
-            spotify (user):
-            <a href="https://open.spotify.com/user/qfyf9girl07waduer1kkystsg"
-              >authenyo</a
-            >
-          </p>
-          <p>
-            spotify (artist):
-            <a href="https://open.spotify.com/artist/7cvtiqon1MXgdhPnOvKlpl"
-              >authenyo</a
-            >
-          </p>
-          <p>
-            twitter: <a href="https://twitter.com/maybeauthen">maybeauthen</a>
-          </p>
-          <p>
-            bandcamp:
-            <a href="https://ipgrabber.bandcamp.com">ipgrabber.bandcamp.com</a>
-          </p>
-          <p>
-            e-mail: <a href="mailto:authen@authenyo.xyz">authen@authenyo.xyz</a>
-          </p>
-        </div>
+          <p>if u saw me somewhere else no u didnt</p>
       </div>
 
       <div class="item2" style="height: 900px">
@@ -135,7 +53,6 @@
         <p><a href="/pages/happiness.html">home</a></p>
         <p><a href="/pages/aboutme.html">about me</a></p>
         <p><a href="/pages/links.html">links</a></p>
-        <p><a href="https://authen.123guestbook.com/#">guestbook</a></p>
         <p><a href="/blog/index.html">blog</a></p>
         <p><a href="/pages/gallery.html">gallery</a></p>
         <p><a href="/pages/coolmusic.html">cool music</a></p>
@@ -144,7 +61,9 @@
             >git repo</a
           >
         </p>
-        <p><a href="/pages/music.html">my music</a></p>
+        <p><a href="/pages/givememoney.html">donate</a></p>
+        <p><a href="https://authen.atabook.org" target="_blank">guestbook</a></p>
+        <p><a href="/pages/services.html">services</a></p>
       </div>
     </div>
   </body>

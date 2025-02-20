@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>self-hosted services</title>
+    <meta name="author" content="authen" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+    <meta content="self-hosted services" property="og:title" />
+    <meta
+      content="free money and everything you desire"
+      property="og:description"
+    />
+    <meta content="/pages/freemoney" property="og:url" />
+    <meta content="/images/moneyman.jpeg" property="og:image" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta content="#a89984" data-react-helmet="true" name="theme-color" />
+    <script defer src="https://collecting.slurs.online/script.js" data-website-id="10adc62c-d228-48f0-98ec-c668a326d6ee"></script>
+    <script type="text/javascript">
+          <meta name=”robots” content=”noai, noimageai”>
+      // <![CDATA[
+      var speed=100; // speed of wobbling, lower is faster
+      var height=3; // height of wobbling in pixels
+      var alink=""; // page to link text to (set to ="" for no link)
+
+      /****************************
+      *    Wobbly Text Effect     *
+      *(c) 2003-6 mf2fm web-design*
+      *  http://www.mf2fm.com/rv  *
+      * DON'T EDIT BELOW THIS BOX *
+      ****************************/
+      var wobtxt, wobble, wobcnt=0;
+      window.onload=function() { if (document.getElementById) {
+        var i, wobli;
+        wobble=document.getElementById("wobble");
+        wobtxt=wobble.firstChild.nodeValue;
+        while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+        for (i=0; i<wobtxt.length; i++) {
+          wobli=document.createElement("span");
+          wobli.setAttribute("id", "wobb"+i);
+          wobli.style.position="relative";
+          wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+          if (alink) {
+            wobli.style.cursor="pointer";
+            wobli.onclick=function() { top.location.href=alink; }
+          }
+          wobble.appendChild(wobli);
+        }
+        setInterval("wobbler()", speed);
+      }}
+
+      function wobbler() {
+        for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+        wobcnt++;
+      }
+      // ]]>
+    </script>
+  </head>
+  <body>
+    <script type="module">
+      import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+      new fairyDustCursor();
+    </script>
+    <div class="flex">
+      <div class="header">
+        <marquee>
+          <div id="wobble">authen</div>
+        </marquee>
+      </div>
+      <div class="item">
+      <h1>services</h1>
+        <p>
+i host a few services on this domain and heres a list of them
+        </p>
+<p>minecraft: mc.authenyo.xyz latest</p>
+<p><a href="https://iceshrimp.authenyo.xyz">iceshrimp.NET (fediverse/social media)</a></p>
+<p><a href="https://bloat.authenyo.xyz">bloat (minimalistic fediverse client)</a></p>
+<p><a href="https://relay.authenyo.xyz">activitypub relay</a></p>
+<p><a href="https://4get.authenyo.xyz">4get (search engine)</a></p>
+<p><a href="https://stream.authenyo.xyz">owncast</a></p>
+
+      </div>
+
+      <div class="item2">
+        <div class="borderthing" style="width: 97%">
+          <p>pages</p>
+        </div>
+        <p><a href="/pages/happiness.html">home</a></p>
+        <p><a href="/pages/aboutme.html">about me</a></p>
+        <p><a href="/pages/links.html">links</a></p>
+        <p><a href="/blog/index.html">blog</a></p>
+        <p><a href="/pages/gallery.html">gallery</a></p>
+        <p><a href="/pages/coolmusic.html">cool music</a></p>
+        <p>
+          <a href="https://git.gay/authenyo/website" target="_blank"
+            >git repo</a
+          >
+        </p>
+        <p><a href="/pages/givememoney.html">donate</a></p>
+        <p><a href="https://authen.atabook.org" target="_blank">guestbook</a></p>
+        <p><a href="/pages/services.html">services</a></p>
+      </div>
+    </div>
+  </body>
+</html>
