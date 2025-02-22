@@ -67,7 +67,6 @@
 
       new fairyDustCursor();
     </script>
-    <div class="flex">
       <div class="header">
         <marquee>
           <div id="wobble">authen</div>
@@ -97,23 +96,15 @@
           >
         </p>
       </div>
-      <div class="item2">
-        <div class="borderthing" style="width: 97%"><p>pages</p></div>
-        <p><a href="/pages/happiness.html">home</a></p>
-        <p><a href="/pages/aboutme.html">about me</a></p>
-        <p><a href="/pages/links.html">links</a></p>
-        <p><a href="/blog/index.html">blog</a></p>
-        <p><a href="/pages/gallery.html">gallery</a></p>
-        <p><a href="/pages/coolmusic.html">cool music</a></p>
-        <p>
-          <a href="https://git.gay/authenyo/website" target="_blank"
-            >git repo</a
-          >
-        </p>
-        <p><a href="/pages/givememoney.html">donate</a></p>
-        <p><a href="https://authen.atabook.org" target="_blank">guestbook</a></p>
-        <p><a href="/pages/services.html">services</a></p>
-</div>
+<div id="navbar-container"></div>
+    <script>
+fetch('/navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-container').innerHTML = data;
+  })
+  .catch(error => console.error('Error loading navbar:', error));
+</script>
     </div>
   </body>
 </html>
