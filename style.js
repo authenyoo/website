@@ -57,6 +57,8 @@ function createStyleSwitcher() {
     { name: 'Default', red: '#330000', blue: '#33ffff' },
     { name: 'Monochrome', red: '#000000', blue: '#ffffff' },
     { name: 'absturztau.be', red: '#121a24', blue: '#accfe8' },
+    { name: 'Fauux', red: '#000000', blue: '#d2738a' },
+    { name: 'Gruvbox', red: '#282828', blue: '#a89984' },
   ];
   
   // Create buttons for each theme
