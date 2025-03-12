@@ -21,12 +21,13 @@
        <script defer src="/style.js"></script>
   </head>
   <body>
+    <div class="flex">
       <div class="header">
         <marquee>
           <div id="wobble">authen</div>
         </marquee>
       </div>
-      <div class="item" style="height: 900px">
+      <div class="item" style="height: 1400px">
         <h1>where you can find me</h1>
           <p>
           fediverse: <a href="https://brain.worm.pink/authen">@authen@brain.worm.pink</a>
@@ -47,6 +48,7 @@
       </div>
 
 <div id="navbar-container"></div>
+</div>
     <script>
 fetch('/navbar.html')
   .then(response => response.text())

@@ -1,6 +1,6 @@
 :root {
-  --red: #330000;
-  --blue: #33ffff;
+  --red: #1a1a1a;
+  --blue: #d2738a;
 }
 
 * {
@@ -13,9 +13,10 @@
 body {
   background-color: var(--red);
   color: var(--blue);
-  background-image: url("/images/nett.png"), url("/images/nett.png"), url("/images/nett.png"), url("/images/nett2.png");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
-  background-position: 0% 100%,0% 0%,100% 0%,100% 100%,top left;
+  background-image: url("/images/bg.png");
+  background-repeat: repeat;
+  background-position: top left;
+  position: relative; /* Necessary for the pseudo-element positioning */
   background-size: 15%;
   font-family: "virale";
   font-size: 20px;
@@ -25,10 +26,23 @@ body {
   min-height: 100vh;
   padding: 1rem;
 }
-
+body::after {
+  content: "";
+  position: fixed; /* Fixed to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/iris.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  pointer-events: none; /* Allows clicks to pass through */
+  z-index: 9999; /* Very high z-index to ensure it's on top of everything */
+  background-size: 20%;
+}
 @font-face {
   font-family: "virale";
-  src: url("/fonts/basiic.ttf");
+  src: url("/fonts/monaco.ttf");
 }
 
 h1 {
@@ -61,6 +75,7 @@ h1 {
 .item {
   width: 100%;
   max-width: 800px;
+  order: 1;
 }
 
 .item2 {
@@ -72,12 +87,14 @@ h1 {
   width: 100%;
   max-width: 200px;
 }
-
+#navbar-container {
+  order: 2;
+}
 .header {
   border: solid var(--blue);
   padding: 1rem;
   width: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   color: var(--blue);
   margin: 1rem auto;
   background-color: var(--red);
@@ -192,250 +209,5 @@ img {
   
   .projectflex {
     grid-template-columns: 1fr;
-  }
-}
-/* Music Player CSS */
-#music-player {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  background-color: var(--red);
-  border: 2px solid var(--blue);
-  color: var(--blue);
-  font-family: "virale";
-  z-index: 1000;
-  transition: all 0.3s ease;
-  max-width: 90vw; /* Prevent player from exceeding viewport width */
-}
-
-#music-player.minimized {
-  height: 30px;
-  overflow: hidden;
-}
-
-.player-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-  border-bottom: 1px solid var(--blue);
-  cursor: move;
-}
-
-.player-title {
-  font-size: 16px;
-}
-
-.player-btn {
-  background: none;
-  border: 1px solid var(--blue);
-  color: var(--blue);
-  cursor: pointer;
-  font-size: 14px;
-  padding: 0 5px;
-}
-
-.player-btn:hover {
-  background-color: rgba(51, 255, 255, 0.1);
-}
-
-.player-content {
-  padding: 10px;
-}
-
-.now-playing {
-  margin-bottom: 10px;
-}
-
-.track-info {
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-#track-name {
-  font-size: 16px;
-  margin-bottom: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-#artist-name {
-  font-size: 14px;
-  opacity: 0.8;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.progress-container {
-  height: 20px;
-  position: relative;
-  margin-top: 5px;
-}
-
-#progress-bar {
-  height: 5px;
-  background-color: var(--blue);
-  width: 0%;
-  margin-bottom: 3px;
-}
-
-.time-display {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  flex-wrap: wrap; /* Allow controls to wrap on very small screens */
-}
-
-.control-btn {
-  background: none;
-  border: 1px solid var(--blue);
-  color: var(--blue);
-  margin: 0 5px;
-  padding: 3px 8px;
-  cursor: pointer;
-  font-size: 14px;
-  min-width: 30px; /* Ensure touchable size on mobile */
-  min-height: 30px;
-}
-
-.control-btn:disabled {
-  opacity: 0.5;
-  cursor: default;
-}
-
-.control-btn:hover:not(:disabled) {
-  background-color: rgba(51, 255, 255, 0.1);
-}
-
-.volume-container {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-
-#volume-slider {
-  width: 60px;
-  margin-left: 5px;
-  background: var(--red);
-  -webkit-appearance: none;
-  height: 5px;
-  border: 1px solid var(--blue);
-}
-
-#volume-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  background: var(--blue);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#volume-slider::-moz-range-thumb {
-  width: 15px;
-  height: 15px;
-  background: var(--blue);
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-}
-
-.playlist-section {
-  max-height: 150px;
-  overflow-y: auto;
-  border: 1px solid var(--blue);
-  padding: 5px;
-}
-
-.playlist-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.playlist-header h3 {
-  font-size: 16px;
-  margin: 0;
-}
-
-#playlist-select {
-  background-color: var(--red);
-  color: var(--blue);
-  border: 1px solid var(--blue);
-  font-family: "virale";
-  font-size: 14px;
-  max-width: 120px;
-}
-
-#playlist-songs {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.playlist-item {
-  padding: 5px;
-  cursor: pointer;
-  border-bottom: 1px solid rgba(51, 255, 255, 0.3);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-height: 30px; /* Better touch target size */
-}
-
-.playlist-item:hover {
-  background-color: rgba(51, 255, 255, 0.1);
-}
-
-.playlist-item.active {
-  background-color: rgba(51, 255, 255, 0.2);
-}
-
-/* Enhanced Responsive Adjustments */
-@media screen and (max-width: 480px) {
-  #music-player {
-    width: calc(100% - 20px); /* Full width minus margins */
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-  }
-  
-  .controls {
-    gap: 5px;
-  }
-  
-  .control-btn {
-    margin: 2px;
-    font-size: 16px; /* Larger for better touch targets */
-  }
-  
-  .volume-container {
-    margin-left: 0;
-    margin-top: 5px;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  #volume-slider {
-    width: 100px; /* Larger for easier use on mobile */
-  }
-  
-  /* When in portrait mode on very small screens, player takes full width */
-  @media (max-height: 500px) {
-    #music-player:not(.minimized) {
-      height: auto;
-      max-height: 50vh; /* Limit height on small screens */
-    }
   }
 }
