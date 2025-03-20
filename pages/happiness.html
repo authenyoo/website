@@ -69,8 +69,8 @@ authen's website. very cool!
         <p>enjoy your time in my contribution to the world wide web</p>
         <marquee style="margin: 30px">
           <a href="/pages/freemoney.html">click here for free money</a>
-        </marquee>        <!--
-      the part of the marquee (not a marquee anymore lmao) of a bunch of buttons of other sites and alt text
+        </marquee>        <!-- 
+      the part of the marquee (not a marquee anymore lmao) of a bunch of buttons of other sites and alt text 
       you can skip this part of the code its kinda messy
       -->
           <img
@@ -216,7 +216,7 @@ authen's website. very cool!
           /></a>
         </p>
         <p>
-
+  
       </div>
       <!--- lil part with all the pages -->
 <div id="navbar-container"></div>
@@ -230,5 +230,14 @@ fetch('/navbar2.html')
   .catch(error => console.error('Error loading navbar:', error));
 </script>
 <script src="/player.js"></script>
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('authenyo', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Donate',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
   </body>
 </html>
