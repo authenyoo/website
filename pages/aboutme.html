@@ -67,7 +67,6 @@
       }
       // ]]>
     </script>
-    <script defer src="/style.js"></script>
   </head>
   <script type="module">
     import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
@@ -95,16 +94,8 @@ The Woken Mind is a concept that is often used toAncient Greek Symbolism Resembl
         <p>im iris and i love u</p>
         <img src="/images/worldisa.png" alt="born to die world is a fuck kill em all 1989 this user is trash man 410,757,864,530 dead cops">
       </div>
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="1800px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>

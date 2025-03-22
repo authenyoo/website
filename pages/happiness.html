@@ -52,7 +52,6 @@ authen's website. very cool!
     <meta name="twitter:card" content="summary_large_image" />
     <meta content="#33FFFF" data-react-helmet="true" name="theme-color" />
     <script defer src="https://collecting.slurs.online/script.js" data-website-id="10adc62c-d228-48f0-98ec-c668a326d6ee"></script>
-    <script defer src="/style.js"></script>
   </head>
   <body>
     <!--- basic flexbox stuff -->
@@ -219,25 +218,8 @@ authen's website. very cool!
   
       </div>
       <!--- lil part with all the pages -->
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar2.html" width="100%" height="1400px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar2.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('authenyo', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Donate',
-    'floating-chat.donateButton.background-color': '#323842',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
   </body>
 </html>

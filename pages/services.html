@@ -87,16 +87,8 @@ i host a few services on this domain and heres a list of them
 <p><a href="https://chan.authenyo.xyz">irischan 2 (vichan)</a></p>
       </div>
 
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="1400px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>

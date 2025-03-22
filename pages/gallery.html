@@ -84,7 +84,7 @@
           <div id="wobble">authen</div>
         </marquee>
       </div>
-      <div class="item" style="order: 1; height: 310.55900621118013vh">
+      <div class="item" style="order: 1; height: 2300px">
         <h1>gallery</h1>
         <p>everything here is licensed in <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
         <p>
@@ -204,16 +204,8 @@
         <marquee><img src="/images/gallery/3dgifmaker11702.gif" /></marquee>
       </div>
       <!--- lil part with all the pages -->
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="2300px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>

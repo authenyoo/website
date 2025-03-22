@@ -80,19 +80,11 @@
        <p>btc: bc1qwns2qrj4lf53qwsnfjp7ldu6ygeh4za7p6lt7a</p>
        <p>ltc: ltc1qck3yg9rj2ftaprjkwx78hxx0kvuqmclp36yas5</p>
        <p>dogecoin (im sorry i made a coinbase wallet and it gave me this): DGqLEHK5bKBi6th8etDdksPQBPe8WTmJ7w</p>
-       <p>whatever solana is: FCofTEwQb2hTZeU2L5ocHCryTGf3qoWF67mXnrRvV4LQ</p>
+       <p>solana: FCofTEwQb2hTZeU2L5ocHCryTGf3qoWF67mXnrRvV4LQ</p>
        <p>ethereum: 0x07fC9c555b6C7f9C39CFF9E87f4037bdf981dd11</p>
 </div>
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="1400px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>

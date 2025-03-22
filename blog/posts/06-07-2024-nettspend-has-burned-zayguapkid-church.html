@@ -90,16 +90,8 @@
         <p>evil nettspend has BURNED DOWN a church!! ! why did he do this</p>
         <img src="/images/evilnett.png">
       </div>
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="1800px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>

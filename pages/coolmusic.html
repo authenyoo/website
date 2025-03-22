@@ -65,7 +65,6 @@
       }
       // ]]>
     </script>
-    <script defer src="/style.js"></script>
   </head>
   <body>
     <script type="module">
@@ -84,16 +83,8 @@
        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3FWCvzduYZg?si=zIXhfRwd03Y8Uu7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
 
-<div id="navbar-container"></div>
+      <div style="order: 2">
+<iframe src="/navbar.html" width="100%" height="1900px" style="border: solid var(--blue);" scrolling="no" title="Navigation"></iframe>
 </div>
-    <script>
-fetch('/navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading navbar:', error));
-</script>
-<script src="/player.js"></script>
   </body>
 </html>
