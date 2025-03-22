@@ -16,9 +16,15 @@
     <meta content="/images/screenie.png" property="og:image" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta content="#a89984" data-react-helmet="true" name="theme-color" />
-    <script defer src="https://collecting.slurs.online/script.js" data-website-id="10adc62c-d228-48f0-98ec-c668a326d6ee"></script>
+    <meta name="”robots”" content="”noai," noimageai” />
+        <script defer src="https://collecting.slurs.online/script.js" data-website-id="10adc62c-d228-48f0-98ec-c668a326d6ee"></script>
 
   </head>
+  <script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new fairyDustCursor();
+  </script>
   <body>
     <div class="flex">
       <div class="header">
