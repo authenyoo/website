@@ -1,4 +1,4 @@
-<img src="iris.png" width="200" height="200"/>
+<img src="/images/iris.png" width="200" height="200"/>
 
 # authenyo.xyz
 
