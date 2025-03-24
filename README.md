@@ -1,5 +1,3 @@
-<img src="/images/iris.png" width="200" height="200"/>
+<p><img src="/images/iris.png" width="200" height="200"/><h1>authenyo.xyz</h1></p>
 
-# authenyo.xyz
-
-Git repo for my personal website. This website is written in barebones HTML and CSS, so it's very messy. I've tried using a static site generator but I'm too stupid. It works™.
+my personal website made with html and css. no js like the lord intended. hosted at https://authenyo.xyz (clearnet) and http://authen7lfz4b3bb7dlt57vphk47tz7vpkz2o6htjg6gy734zjxfobsqd.onion (tor).
